@@ -4,7 +4,7 @@ import { beforeEach, afterEach } from './guards'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.VITE_BASE_PATH),
-  routes: AppRoutes
+  routes: AppRoutes,
 })
 //路由前置守卫
 router.beforeEach(beforeEach)

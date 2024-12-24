@@ -29,32 +29,35 @@
       </div>
       <div class="matt-side-scroll">
         <el-scrollbar>
-          <el-menu>
-            <el-menu-item index="1">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-            <el-menu-item index="2">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-            <el-menu-item index="3">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-            <el-menu-item index="4">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-            <el-menu-item index="5">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-            <el-menu-item index="6">
-              <el-icon><ChatRound /></el-icon>
-              <span>仪表盘</span>
-            </el-menu-item>
-          </el-menu>
+          <!-- <el-menu>
+
+                      <el-menu-item index="1">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                      <el-menu-item index="2">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                      <el-menu-item index="3">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                      <el-menu-item index="4">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                      <el-menu-item index="5">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                      <el-menu-item index="6">
+                          <el-icon><ChatRound /></el-icon>
+                          <span>仪表盘</span>
+                      </el-menu-item>
+                  </el-menu> -->
+
+          <ExperimentTree />
         </el-scrollbar>
       </div>
       <div class="matt-side-bottom">
@@ -67,7 +70,7 @@
 </template>
 
 <script setup lang="ts">
-// import { onBeforeMount } from 'vue';
+import ExperimentTree from '@components/ExperimentTree.vue'
 // onBeforeMount(()=>{
 //   window.electron.ipcRenderer.invoke('resize-window');
 // })

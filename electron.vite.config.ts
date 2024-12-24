@@ -7,10 +7,10 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   main: {
-    plugins: [externalizeDepsPlugin(), bytecodePlugin()]
+    plugins: [externalizeDepsPlugin(), bytecodePlugin()],
   },
   preload: {
-    plugins: [externalizeDepsPlugin(), bytecodePlugin()]
+    plugins: [externalizeDepsPlugin(), bytecodePlugin()],
   },
   renderer: {
     resolve: {
@@ -24,18 +24,18 @@ export default defineConfig({
         '@assets': resolve('src/renderer/src/assets'),
         '@styles': resolve('src/renderer/src/styles'),
         '@api': resolve('src/renderer/src/api'),
-        '@hooks': resolve('src/renderer/src/hooks')
-      }
+        '@hooks': resolve('src/renderer/src/hooks'),
+      },
     },
     plugins: [
       vue(),
       AutoImport({
-        resolvers: [ElementPlusResolver()]
+        resolvers: [ElementPlusResolver()],
       }),
       Components({
-        resolvers: [ElementPlusResolver()]
-      })
-    ]
+        resolvers: [ElementPlusResolver()],
+      }),
+    ],
     // server: {
     //   proxy: {
     //     '/api': {
@@ -45,5 +45,5 @@ export default defineConfig({
     //     }
     //   }
     // }
-  }
+  },
 })

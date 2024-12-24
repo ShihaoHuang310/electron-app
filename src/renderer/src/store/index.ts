@@ -4,9 +4,9 @@ import { useUserStore } from './useUserStore'
 export const useStore = defineStore('storeId', {
   state: () => {
     return {
-      user: useUserStore()
+      user: useUserStore(),
     }
   },
   getters: {},
-  actions: {}
+  actions: {},
 })

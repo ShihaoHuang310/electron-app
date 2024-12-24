@@ -3,7 +3,7 @@ import { defineStore } from 'pinia'
 export const useUserStore = defineStore('userId', {
   state: () => {
     return {
-      userName: ''
+      userName: '',
     }
   },
   getters: {},
@@ -13,8 +13,8 @@ export const useUserStore = defineStore('userId', {
     strategies: [
       {
         storage: localStorage, //默认走session
-        paths: ['userName']
-      }
-    ]
-  }
+        paths: ['userName'],
+      },
+    ],
+  },
 })
